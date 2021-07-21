@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+      <h1 class="header__heading">IP Address Tracker</h1>
+    <div class="header__type-box">
+      <input id="ip_address" class="header__type-box--ipt" type="text" placeholder="Search for any IP address or domain">
+      <button id="search_button" class="header__type-box--btn"><img src="images/icon-arrow.svg" alt="arrow"></button>
+    </div>
+  </div>
+  <div class="info-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 info-box__container--item">
+          <p>IP Address</p>
+          <span id="current_ip" class="result">----</span>
+        </div>
+        <div class=" col-lg-3 col-md-6 info-box__container--item">
+          <p>Location </p>
+          <span id="current_location" class="result">----</span>
+        </div>
+        <div class=" col-lg-3 col-md-6 info-box__container--item">
+          <p>Timezone</p>
+          <span id="current_time" class="result">----</span>
+        </div>
+        
+        <div class=" col-lg-3 col-md-6 info-box__container--item">
+          <p>ISP</p>
+          <span id="current_isp" class="result">----</span>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>    
+      
+      
+      
+  </div>
+    
+  
+
+  
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script src="app.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
